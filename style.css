@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@font-face {
+  font-family: customFont;
+  src: url(Bulletto\ Killa.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  background-color: #ededed;
+}
+
+/* Main Container of Landing Page */
+
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #ededed;
+}
+
+/* Loader */
+
+.wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #181b1c;
+  z-index: 100;
+}
+
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8%;
+  height: 20vh;
+  background: #b90e0a;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Header */
+
+.header {
+  background-color: #b90e0a;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6vh;
+  top: 0;
+  left: 0;
+  z-index: 19;
+}
+
+.header-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  padding: 0px 60px;
+}
+
+.header__logo {
+  font-family: customFont;
+  color: white;
+  font-size: 32px;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  text-align: center;
+}
+
+.header__links {
+  display: inline;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* Hero Section */
+
+.hero {
+  height: 86vh;
+  padding: 0 60px;
+  position: relative;
+}
+
+.image-wrapper {
+  height: 70%;
+  max-width: 320px;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  z-index: 5;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  background-color: #ededed;
+  opacity: 1;
+}
+
+.message-wrapper {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  z-index: 10;
+}
+
+.hero__message {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.6;
+}
+
+.hero__message--tag {
+  color: #b90e0a;
+}
+
+.line-01 .letter,
+.line-02 .letter,
+.line-03 .letter {
+  display: inline-block;
+  line-height: 1.6;
+}
+
+.hero__image {
+  width: 100%;
+  height: 100%;
+}
+
+.marketing-wrapper {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  font-size: 20px;
+  color: #181b1c;
+  font-weight: 300;
+}
+
+.hero__button {
+  margin-top: 80px;
+  outline: 0;
+  border: 0;
+  color: #ededed;
+  background-color: #b90e0a;
+  padding: 24px 48px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hero__span {
+  font-weight: 600;
+  color: #b90e0a;
+}
+
+.text-roller {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #b90e0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  overflow: hidden;
+  z-index: 12;
+}
+
+@keyframes roll-the-message {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.roller__text {
+  font-size: 32px;
+  font-weight: 200;
+  color: white;
+  white-space: nowrap;
+  mix-blend-mode: normal !important;
+  animation: roll-the-message 20s linear infinite;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+}
+
+/* Demo */
+.demo {
+  height: 100vh;
+  position: relative;
+  background-color: #181b1c;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.demo__text {
+  font-size: 80px;
+  color: white;
+}
+
+.demo__detail{
+  color: #ededed;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.flex-content{
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+
+.gif-wrapper {
+  max-width: 60%;
+}
+
+.demo__gif {
+  height: 100%;
+  width: 100%;
+}
+
+/* Contact Section */
+
+.contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 200px;
+  color: white;
+  background-color: #181b1c;
+  font-family: customFont;
+  font-weight: 100;
+  letter-spacing: 10px;
+}
