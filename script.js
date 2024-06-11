@@ -82,11 +82,49 @@ TweenMax.to(".box", 2.4, {
     delay: 1.6,
 });
 
-let contact = document.querySelector('.contact');
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+  });
 
-gsap.from('.contact', {
-    backgroundColor: "Yellow",
-    duration: 3,
-    repeat: -1,
-    yoyo: true
-})
+
+  const items = document.querySelectorAll(".accordion button");
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+  
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+  
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+// Tabs
+
+let tabs = document.querySelector(".tabs");
+let tabHeader = tabs.querySelector(".tab-header");
+let tabBody = tabs.querySelector(".tab-body");
+let tabIndicator = tabs.querySelector(".tab-indicator");
+let tabHeaderNodes = tabs.querySelectorAll(".tab-header > div");
+let tabBodyNodes = tabs.querySelectorAll(".tab-body > div");
+
+for(let i=0;i<tabHeaderNodes.length;i++){
+  tabHeaderNodes[i].addEventListener("click",function(){
+    tabHeader.querySelector(".active").classList.remove("active");
+    tabHeaderNodes[i].classList.add("active");
+    tabBody.querySelector(".active").classList.remove("active");
+    tabBodyNodes[i].classList.add("active");
+    tabIndicator.style.left = `calc(calc(calc(25% - 5px) * ${i}) + 10px)`;
+  });
+}
