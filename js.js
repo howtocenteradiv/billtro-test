@@ -31,7 +31,7 @@ $(function () {
 
 		let gsapBl = $('.gsap__bl').width();
 
-		//On full width
+		//On fdivl width
 		// $('.gsap__item').css('width', gsapBl + 'px');
 
 		//Transform slider track

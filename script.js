@@ -22,7 +22,7 @@ anime.timeline()
     opacity: [0, 1],
     easing: "easeOutExpo",
     duration: 1200,
-    delay: (el, i) => 2400 + 50 * i
+    delay: (el, i) => 400 + 50 * i
   });
 
 var textWrapper = document.querySelector('.line-02');
@@ -36,7 +36,7 @@ anime.timeline()
     opacity: [0, 1],
     easing: "easeOutExpo",
     duration: 1200,
-    delay: (el, i) => 2400 + 50 * i
+    delay: (el, i) => 400 + 50 * i
   });
 
 var textWrapper = document.querySelector('.line-03');
@@ -50,36 +50,13 @@ anime.timeline()
     opacity: [0, 1],
     easing: "easeOutExpo",
     duration: 1200,
-    delay: (el, i) => 2400 + 50 * i
+    delay: (el, i) => 400 + 50 * i
   });
-
-TweenMax.to(".wrapper", 2, {
-  top: "-100%",
-  ease: Expo.easeInOut,
-  delay: 1.6
-});
-
-var tl = new TimelineMax();
-
-tl.from(".loader", 1, {
-  scaleY: "0%",
-  y: 80,
-  ease: Expo.easeInOut,
-  delay: 1,
-  transformOrigin: "50% 100%"
-});
-
-tl.to(".loader", 1, {
-  height: "40vh",
-  scaleY: "0%",
-  ease: Expo.easeInOut,
-  transformOrigin: "0% -100%"
-});
 
 TweenMax.to(".box", 2.4, {
   y: "-100%",
   ease: Expo.easeInOut,
-  delay: 1.6,
+  delay: 0,
 });
 
 const swiper = new Swiper('.swiper', {
@@ -91,6 +68,19 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 
+});
+
+gsap.from('.header',{
+  y:"-100px",
+  opacity:0,
+  duration:1.5,
+  delay:0.7
+});
+
+gsap.from('.marketing-wrapper',{
+  opacity:0,
+  duration:1,
+  delay:1
 });
 
 
