@@ -1073,3 +1073,13 @@ input {
   max-width: 1440px;
   background-color: transparent;
 }
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.footer__input.error {
+  border-color: red;
+}

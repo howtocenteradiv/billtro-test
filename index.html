@@ -979,30 +979,110 @@
             <div class="footer__message">PRIDE OF <a href="#" class="footer__message--tag">SEVRUM</a></div>
           </div>
         </div>
-        <form class="footer-form-wrapper">
+        <form class="footer-form-wrapper" id="contactForm">
 
           <div class="footer__label"><label for="name">It all starts with your good name<span
                 class="form__tag">*</span></label></div><br>
-          <input class="footer__input" type="text" id="name" name="name" placeholder="Enter your name"><br>
+          <input class="footer__input" type="text" id="name" name="name" placeholder="Enter your name" required><br>
+          <div id="name-error" class="error-message"></div>
 
           <div class="footer__label"><label for="email">How can our team reach you<span
                 class="form__tag">*</span></label></div><br>
-          <input class="footer__input" type="email" id="email" name="email" placeholder="Enter your email address"><br>
+          <input class="footer__input" type="email" id="email" name="email" placeholder="Enter your email address" required><br>
+          <div id="email-error" class="error-message"></div>
 
-          <div class="footer__label"><label for="contact">Let us call you</label></div>
+          <div class="footer__label"><label for="phone">Let us call you</label></div>
           <br>
-          <input class="footer__input" type="tel" id="contact" name="contact" placeholder="Enter your phone number"><br>
+          <input class="footer__input" type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br>
+          <div id="phone-error" class="error-message"></div>
 
           <div class="footer__label"><label for="message">Excited to hear from you<span
                 class="form__tag">*</span></label></div><br>
-          <input class="footer__input" type="text" id="message" name="message" placeholder="Enter your message"><br>
+          <input class="footer__input" type="text" id="message" name="message" placeholder="Enter your message" required><br>
+          <div id="message-error" class="error-message"></div>
 
-          <button class="form__button">SEND MESSAGE</button>
+          <button class="form__button" type="submit">SEND MESSAGE</button>
         </form>
       </div>
 
     </div>
   </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Clear previous error messages and highlights
+      clearErrors();
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const message = document.getElementById('message').value;
+      const title = "BILLTRO"
+
+      const data = {
+        name,
+        email,
+        phone,
+        message,
+        title
+      };
+
+      fetch('https://sevrum-server.onrender.com/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+      .then(response => response.json())
+      .then(data => {
+      if (data.success) {
+        alert('Message sent successfully!');
+        // Optionally reset the form
+        document.getElementById('contactForm').reset();
+        } else {
+          handleErrors(data.errors);
+        }
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        alert('Error sending message. Please try again later.');
+      });
+    });
+
+
+    function handleErrors(errors) {
+      for (const field in errors) {
+        if (errors.hasOwnProperty(field)) {
+          const errorMessage = errors[field];
+          const inputElement = document.getElementById(field);
+          const errorElement = document.getElementById(`${field}-error`);
+
+          if (inputElement) {
+            inputElement.classList.add('error');
+          }
+          if (errorElement) {
+            errorElement.textContent = errorMessage;
+          }
+        }
+      }
+    }
+
+    function clearErrors() {
+      const errorElements = document.querySelectorAll('.error-message');
+      const inputElements = document.querySelectorAll('.footer__input');
+
+      errorElements.forEach(errorElement => {
+        errorElement.textContent = '';
+      });
+
+      inputElements.forEach(inputElement => {
+        inputElement.classList.remove('error');
+      });
+    }
+  </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
