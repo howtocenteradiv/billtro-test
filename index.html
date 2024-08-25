@@ -1,1101 +1,1524 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BILLTRO - Supercharge Your Business.</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.1.11/dist/lenis.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BILLTRO - Supercharge Your Business.</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-  <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-</head>
-
-<body>
-  <header class="header">
-    <div class="header-wrapper">
-      <a href="/" class="header__logo">Billtro</a>
-      <div class="header-nav">
-        <a href="#" class="header__links">FEATURES</a>
-        <a href="#" class="header__links">IMPRESSIONS</a>
-        <a href="#" class="header__links">PRICING</a>
-        <a href="#" class="header__links">CONTACT</a>
-      </div>
-    </div>
-  </header>
-
-  <main class="main">
-    <section class="hero">
-      <div class="message-wrapper">
-        <h1 class="hero__message line-01">ACCELERATING</h1>
-        <h1 class="hero__message hero__message--tag line-02">BUSINESS</h1>
-        <h1 class="hero__message line-03">EFFECIENCY.</h1>
-      </div>
-      <div class="image-wrapper">
-        <div class="box"></div>
-        <img src="assets/hero-img.png" alt="" class="hero__image" />
-      </div>
-      <div class="marketing-wrapper">
-        <div class="hero__paragraph">
-          Gain <span class="hero__span">edge</span> in your business by <br />
-          <span class="hero__span">eliminating</span> the daily struggle
-          <br />
-          of <span class="hero__span">sourcing</span> &
-          <span class="hero__span">stocking</span> your
-          <span class="hero__span">inventory</span>. <br />
-          <br />
-          And take advantage of <span class="hero__span">seamless</span> <br />
-          resource planning and <span class="hero__span">invoicing</span>.
-        </div>
-
-        <button class="hero__button">GET EARLY ACCESS</button>
-      </div>
-    </section>
-  </main>
-
-  <section class="mission">
-    <div class="mission-wrapper">
-      <div class="mission__span">MISSION</div>
-      <h1 class="mission__message">
-        Empower businesses <br />
-        to optimize inventory, <br />
-        streamline transactions <br />
-        and boost performance.
-      </h1>
-    </div>
-
-  </section>
-
-  <section class="features">
-    <main class="main theme-bg">
-
-      <div class="spacer"></div>
-
-      <div class="features__header">
-        FEATURES
-      </div>
-
-      <div class="spacer"></div>
-
-      <div class="features__image">
-        <img class="features__img" src="assets/feature-img-01.png" alt="">
-      </div>
-
-      <div class="spacer"></div>
-
-      <div class="inventory-content-wrapper">
-
-        <div class="feature-content">
-          <h1 class="feature-title">SIMPLIFIED <br> <span class="feature__span">INVENTORY</span></h1>
-          <p class="feature-para">
-            Say hello to rich inventory <br>solution. Keeping track of stock <br>
-            and stock management just <br>got better. <br> <br>
-
-            Make use of alerts, stats & <br>historical data of all your item <br>essentials and take full control
-            <br>over your inventory.
-          </p>
-        </div>
-
-        <div class="feature-benefits">
-          <div class="benefit-box">
-            <img src="assets/organize.svg" alt="" class="benefit-icon">
-            <p class="benefit-para">Organize your products and <br>say no to disconnected data.</p>
-          </div>
-          <div class="benefit-box">
-            <img src="assets/stats.svg" alt="" class="benefit-icon">
-            <p class="benefit-para">Stay updated with inventory <br>
-              statistics for decision making.</p>
-          </div>
-          <div class="benefit-box">
-            <img src="assets/alert.svg" alt="" class="benefit-icon">
-            <p class="benefit-para">Get notified via alerts for all <br>
-              your low and dead stocks.</p>
-          </div>
-          <div class="benefit-box">
-            <img src="assets/history.svg" alt="" class="benefit-icon">
-            <p class="benefit-para">Gain insights from all historic <br>records of your inventory.</p>
-          </div>
+  <body>
+    <header class="header">
+      <div class="header-wrapper">
+        <a href="/" class="header__logo">Billtro</a>
+        <div class="header-nav">
+          <a href="#" class="header__links">FEATURES</a>
+          <a href="#" class="header__links">IMPRESSIONS</a>
+          <a href="#" class="header__links">PRICING</a>
+          <a href="#" class="header__links">CONTACT</a>
         </div>
       </div>
+    </header>
 
-      <div class="spacer"></div>
-
-      <div class="staffing-wrapper ">
-        <div class="features__image image-half">
-          <img class="features__img" src="assets/feature-img-02.png" alt="">
+    <main class="main">
+      <section class="hero">
+        <div class="message-wrapper">
+          <h1 class="hero__message line-01">ACCELERATING</h1>
+          <h1 class="hero__message hero__message--tag line-02">BUSINESS</h1>
+          <h1 class="hero__message line-03">EFFECIENCY.</h1>
         </div>
-
-        <div class="staffing-content">
-          <h1 class="feature-title">INVITE <br> <span class="feature__span">TEAM</span></h1>
-          <p class="feature-para">
-            Send Invitation, assign roles & <br>permissions, collaborate with <br>your team. <br> <br>
-
-            Speed. This is what most SMEs <br>
-            lack in their workflow. Expedite <br>your business functions with <br>right people managing <br>inventory,
-            billing and many <br>such operations.
-          </p>
-
-          <div class="benefit-wrapper">
-            <div class="benefit-slice">
-              <img src="assets/speed.svg" alt="" class="benefit-icon">
-              <p class="benefit-para">Speed up business <br>
-                functions with team.</p>
-            </div>
-            <div class="benefit-slice">
-              <img src="assets/access.svg" alt="" class="benefit-icon">
-              <p class="benefit-para">Manage all user roles <br>
-                and their accesses.</p>
-            </div>
-            <div class="benefit-slice">
-              <img src="assets/scale.svg" alt="" class="benefit-icon">
-              <p class="benefit-para">Scale your team as <br>
-                your business grows.</p>
-            </div>
+        <div class="image-wrapper">
+          <div class="box"></div>
+          <img src="assets/hero-img.png" alt="" class="hero__image" />
+        </div>
+        <div class="marketing-wrapper">
+          <div class="hero__paragraph">
+            Gain <span class="hero__span">edge</span> in your business by <br />
+            <span class="hero__span">eliminating</span> the daily struggle
+            <br />
+            of <span class="hero__span">sourcing</span> &
+            <span class="hero__span">stocking</span> your
+            <span class="hero__span">inventory</span>. <br />
+            <br />
+            And take advantage of <span class="hero__span">seamless</span>
+            <br />
+            resource planning and <span class="hero__span">invoicing</span>.
           </div>
 
+          <button class="hero__button">GET EARLY ACCESS</button>
         </div>
-
-
-      </div>
-
-      <div class="spacer"></div>
-
-      <div class="vendor-ledger-wrapper">
-        <div class="vendor-wrapper">
-          <div class="features__image image-half">
-            <img class="features__img" src="assets/feature-img-03.png" alt="">
-          </div>
-
-          <div class="spacer"></div>
-
-          <h1 class="feature-title">MANAGE <span class="feature__span">VENDOR</span></h1>
-          <p class="feature-para">
-            Enjoy a centralized vendor Information and important detail <br>
-            for all your suppliers and customers. Stay ensured of your <br>
-            inventory fulfilment along with efficient management of <br>
-            vendor interactions.
-          </p>
-
-        </div>
-
-        <div class="vendor-wrapper">
-          <div class="features__image image-half">
-            <img class="features__img" src="assets/feature-img-04.png" alt="">
-          </div>
-
-          <div class="spacer"></div>
-
-          <h1 class="feature-title">MANAGE <span class="feature__span">VENDOR</span></h1>
-          <p class="feature-para">
-            Enjoy a centralized vendor Information and important detail <br>
-            for all your suppliers and customers. Stay ensured of your <br>
-            inventory fulfilment along with efficient management of <br>
-            vendor interactions.
-          </p>
-
-        </div>
-      </div>
-
-      <div class="spacer"></div>
-
-      <div class="features__image">
-        <img class="features__img" src="assets/feature-img-05.png" alt="">
-      </div>
-
-      <div class="spacer"></div>
-
-      <div class="transaction-content-wrapper">
-        <h1 class="feature-title">TRACK ALL <br><span class="feature__span">TRANSACTIONS</span></h1>
-        <p class="feature-para">
-          Manage and track all your transactions. <br> <br>
-  
-          Set yourself apart with accurate records, <br>
-          monitor cash flows and ensure <br>
-          the financial health of your business.
-        </p>
-      </div>
-
-      <div class="spacer"></div>
-      
-      <div class="pos-wrapper ">
-        <div class="features__image image-half">
-          <img class="features__img" src="assets/feature-img-06.png" alt="">
-        </div>
-
-        <div class="pos-content">
-          <h1 class="feature-title">EASY <span class="feature__span">POS</span></h1>
-          <p class="feature-para">
-            Streamline the point-of-sale <br>process, making it simple and <br>efficient for businesses to <br>handle transactions. <br> <br>
-
-            Tailored to meet the needs of <br>both small and large <br>businesses, ensuring a <br>seamless checkout experience.
-          </p>
-
-          <div class="benefit-wrapper">
-            <div class="benefit-slice">
-              <img src="assets/speed.svg" alt="" class="benefit-icon">
-              <p class="benefit-para">Speed up business <br>
-                functions with team.</p>
-            </div>
-            <div class="benefit-slice">
-              <img src="assets/access.svg" alt="" class="benefit-icon">
-              <p class="benefit-para">Manage all user roles <br>
-                and their accesses.</p>
-            </div>
-            <div class="benefit-slice">
-              <img src="assets/scale.svg" alt="" class="benefit-icon">
-              <p class="benefit-para">Scale your team as <br>
-                your business grows.</p>
-            </div>
-          </div>
-
-        </div>
-
-
-      </div>
-
+      </section>
     </main>
 
-
-  </section>
-
-  <main class="main">
-    <section class="impressions">
-
-        <div class="impressions__header">
-          EARLY <span class="impressions__span">IMPRESSIONS</span>
-        </div>
-
-        <div class="impressions__message">
-          Billtro is modeled around <br>
-          pain points we discovered in our rigorous user research. <br> <br>
-        </div>
-
-        <div class="impressions-review-wrapper swiper">
-          <div class="swiper-wrapper">
-            <div class="impressions-container swiper-slide">
-              <div class="impressions__comment"> <span class="quote"> " </span><br> I love it. I have been
-                using
-                this app for over a month now. I
-                am
-                able to manage my shop inventory easily. The best part is that I can print and share the
-                bills
-                generated
-                from this app.
-              </div>
-              <div class="impressions__name">Jeevan Lama</div>
-              <div class="impressions__profession">Retail Outlet Owner</div>
-            </div>
-            <div class="impressions-container swiper-slide">
-              <div class="impressions__comment"> <span class="quote"> " </span><br> <br> I love it. I have
-                been
-                using this app for over a month now. I
-                am
-                able to manage my shop inventory easily. The best part is that I can print and share the
-                bills
-                generated
-                from this app.
-              </div>
-              <div class="impressions__name">Jeevan Lama</div>
-              <div class="impressions__profession">Retail Outlet Owner</div>
-            </div>
-            <div class="impressions-container swiper-slide">
-              <div class="impressions__comment"> <span class="quote"> " </span><br> <br> I love it. I have
-                been
-                using this app for over a month now. I
-                am
-                able to manage my shop inventory easily. The best part is that I can print and share the
-                bills
-                generated
-                from this app.
-              </div>
-              <div class="impressions__name">Jeevan Lama</div>
-              <div class="impressions__profession">Retail Outlet Owner</div>
-            </div>
-          </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-
-        <div class="button-wrapper">
-          <div class="rating-wrapper">
-            <img src="assets/rating-icon.svg" alt="" class="impressions__rating">
-            <img src="assets/rating-icon.svg" alt="" class="impressions__rating">
-            <img src="assets/rating-icon.svg" alt="" class="impressions__rating">
-            <img src="assets/rating-icon.svg" alt="" class="impressions__rating">
-            <span class="impressions__rating-text">Rated 4 stars on Google Play.</p>
-          </div>
-          <a href="#"><img class="impressions__button" src="assets/google-play-button.jpg" alt=""></a>
-          <p class="impressions__text">Join the club of thousands. <br><span class="impressions__header-tag
-                        ">Supercharge</span> your business.</p>
-        </div>
-
-
-
-    </section>
-  </main>
-
-
-
-
-
-  <div class="text-roller">
-    <p class="roller__text">
-      BRING THE BEST * OUT OF YOUR BUSINESS * AND SOAR FORWARD * WITH BRUTAL
-      CONFIDENCE * CHASE EXCELLENCE * AND NOTHING ELSE
-      * BRING THE BEST * OUT OF YOUR BUSINESS * AND SOAR FORWARD * WITH BRUTAL
-      CONFIDENCE * CHASE EXCELLENCE * AND NOTHING ELSE
-    </p>
-  </div>
-
-  <main class="main">
-    <section class="pricing">
-
-      <div class="pricing__header">Pricing</div>
-      <div class="pricing__para">
-        Choose a plan that <span class="pricing__para--tag">grows</span> with your <br>
-        business and unlock the power of <span class="pricing__para--tag">seamless</span> <br>
-        inventory and billing management today! <br> <br>
-
-        Made for businesses of all scale, nature and sizes.
+    <section class="mission">
+      <div class="mission-wrapper">
+        <div class="mission__span">MISSION</div>
+        <h1 class="mission__message">
+          Empower businesses <br />
+          to optimize inventory, <br />
+          streamline transactions <br />
+          and boost performance.
+        </h1>
       </div>
+    </section>
 
-      <div class="pricing-grid">
+    <section class="features">
+      <main class="main theme-bg">
+        <div class="spacer"></div>
 
-        <div class="pricing-grid-item">
-          <div class="grid-content-wrapper">
-            <div class="pricing-title-wrapper">
-              <div class="pricing-icon">
-                <img src="assets/free-forever-icon.svg" alt="" class="pricing__icon">
-              </div>
-              <div class="pricing-plan-box">
-                <p class="pricing-plan-title">Free Forever</p>
-                <p class="pricing-plan-detail">For individual outlets,
-                  retailers and shops with few
-                  or limited staffing.</p>
-              </div>
+        <div class="features__header">FEATURES</div>
+
+        <div class="spacer"></div>
+
+        <div class="features__image">
+          <img class="features__img" src="assets/feature-img-01.png" alt="" />
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="inventory-content-wrapper">
+          <div class="feature-content">
+            <h1 class="feature-title">
+              SIMPLIFIED <br />
+              <span class="feature__span">INVENTORY</span>
+            </h1>
+            <p class="feature-para">
+              Say hello to rich inventory <br />solution. Keeping track of stock
+              <br />
+              and stock management just <br />got better. <br />
+              <br />
+
+              Make use of alerts, stats & <br />historical data of all your item
+              <br />essentials and take full control <br />over your inventory.
+            </p>
+          </div>
+
+          <div class="feature-benefits">
+            <div class="benefit-box">
+              <img src="assets/organize.svg" alt="" class="benefit-icon" />
+              <p class="benefit-para">
+                Organize your products and <br />say no to disconnected data.
+              </p>
             </div>
-            <div class="pricing-display-box">
-              FREE.ALWAYS.
+            <div class="benefit-box">
+              <img src="assets/stats.svg" alt="" class="benefit-icon" />
+              <p class="benefit-para">
+                Stay updated with inventory <br />
+                statistics for decision making.
+              </p>
             </div>
-            <ul class="pricing-plan-list">
-              <li class="pricing-list-item">
-                Unlimited categories & item records. <span class="pricing-tag"> *</span>
-              </li>
-              <li class="pricing-list-item">
-                Unlimited supplier & customer records and details. <span class="pricing-tag"> *</span>
-              </li>
-              <li class="pricing-list-item">
-                1000 purchase and sales record<span class="pricing-tag">/month*</span>
-              </li>
-              <li class="pricing-list-item">
-                <span class="pricing-tag">One</span> Admin <span class="pricing-tag">One</span> Staff Combo.
-              </li>
-              <li class="pricing-list-item">
-                <span class="pricing-tag">Alerts</span> for item stock count.
-              </li>
-              <li class="pricing-list-item">
-                Item Transaction <span class="pricing-tag">History</span> to
-                track item sales and more..
-              </li>
-              <li class="pricing-list-item">
-                <span class="pricing-tag">Alerts</span> for item stock count.
-              </li>
-              <li class="pricing-list-item">
-                Business <span class="pricing-tag">Ledger</span>to stay on
-                top of all your payments..
-              </li>
-              <li class="pricing-list-item">
-                <span class="pricing-tag">Essential</span> customer support
-                through email and phone.
-              </li>
-              <li class="pricing-list-item">
-                <span class="pricing-tag">Generate</span> and export summary
-                and <span class="pricing-tag">reports. *</span>
-              </li>
-              <li class="pricing-list-item">
-                Customizable digital <span class="pricing-tag">business card</span>
-                to share among parties.
-              </li>
-            </ul>
-
-            <div class="pricing-note">
-              NOTE:
-              <p class="note-text">
-                Create as many entries/records.
-                However, with <span class="pricing-tag">Free Forever</span> plan
-                you will only be able to view recent
-                <span class="pricing-tag">28 days</span> of purchase and sales records.
+            <div class="benefit-box">
+              <img src="assets/alert.svg" alt="" class="benefit-icon" />
+              <p class="benefit-para">
+                Get notified via alerts for all <br />
+                your low and dead stocks.
+              </p>
+            </div>
+            <div class="benefit-box">
+              <img src="assets/history.svg" alt="" class="benefit-icon" />
+              <p class="benefit-para">
+                Gain insights from all historic <br />records of your inventory.
               </p>
             </div>
           </div>
-          <div class="pricing-button-wrapper">
-            <button class="pricing-download-button">
-              DOWNLOAD NOW
-            </button>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="staffing-wrapper">
+          <div class="features__image image-half">
+            <img class="features__img" src="assets/feature-img-02.png" alt="" />
+          </div>
+
+          <div class="staffing-content">
+            <h1 class="feature-title">
+              INVITE <br />
+              <span class="feature__span">TEAM</span>
+            </h1>
+            <p class="feature-para">
+              Send Invitation, assign roles & <br />permissions, collaborate
+              with <br />your team. <br />
+              <br />
+
+              Speed. This is what most SMEs <br />
+              lack in their workflow. Expedite <br />your business functions
+              with <br />right people managing <br />inventory, billing and many
+              <br />such operations.
+            </p>
+
+            <div class="benefit-wrapper">
+              <div class="benefit-slice">
+                <img src="assets/speed.svg" alt="" class="benefit-icon" />
+                <p class="benefit-para">
+                  Speed up business <br />
+                  functions with team.
+                </p>
+              </div>
+              <div class="benefit-slice">
+                <img src="assets/access.svg" alt="" class="benefit-icon" />
+                <p class="benefit-para">
+                  Manage all user roles <br />
+                  and their accesses.
+                </p>
+              </div>
+              <div class="benefit-slice">
+                <img src="assets/scale.svg" alt="" class="benefit-icon" />
+                <p class="benefit-para">
+                  Scale your team as <br />
+                  your business grows.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="pricing-grid-item">
-          <div class="grid-content-wrapper">
+        <div class="spacer"></div>
 
-            <div class="pricing-title-wrapper">
-              <div class="pricing-icon">
-                <img src="assets/business-icon.svg" alt="" class="pricing__icon">
-              </div>
-              <div class="pricing-plan-box">
-                <p class="pricing-plan-title">Business</p>
-                <p class="pricing-plan-detail">For B2Bs looking to transform
-                  their stocking and simplify the
-                  billing process. </p>
-              </div>
+        <div class="vendor-ledger-wrapper">
+          <div class="vendor-wrapper">
+            <div class="features__image image-half">
+              <img
+                class="features__img"
+                src="assets/feature-img-03.png"
+                alt=""
+              />
             </div>
-            <div class="pricing-subscription-box">
-              FREE.ALWAYS.
-            </div>
-            <ul class="pricing-plan-list">
-              <li class="pricing-list-item">
-                Unlimited categories & item records. <span class="pricing-tag"> *</span>
-              </li>
-              <li class="pricing-list-item">
-                Unlimited supplier & customer records and details. <span class="pricing-tag"> *</span>
-              </li>
-              <li class="pricing-list-item">
-                1000 purchase and sales record<span class="pricing-tag">/month*</span>
-              </li>
-              <li class="pricing-list-item">
-                <span class="pricing-tag">One</span> Admin <span class="pricing-tag">One</span> Staff Combo.
-              </li>
-              <li class="pricing-list-item">
-                <span class="pricing-tag">Alerts</span> for item stock count.
-              </li>
-              <li class="pricing-list-item">
-                Item Transaction <span class="pricing-tag">History</span> to
-                track item sales and more..
-              </li>
-              <li class="pricing-list-item">
-                <span class="pricing-tag">Alerts</span> for item stock count.
-              </li>
-              <li class="pricing-list-item">
-                Business <span class="pricing-tag">Ledger</span>to stay on
-                top of all your payments..
-              </li>
-              <li class="pricing-list-item">
-                <span class="pricing-tag">Essential</span> customer support
-                through email and phone.
-              </li>
-              <li class="pricing-list-item">
-                <span class="pricing-tag">Generate</span> and export summary
-                and <span class="pricing-tag">reports. *</span>
-              </li>
-              <li class="pricing-list-item">
-                Customizable digital <span class="pricing-tag">business card</span>
-                to share among parties.
-              </li>
-            </ul>
+
+            <div class="spacer"></div>
+
+            <h1 class="feature-title">
+              MANAGE <span class="feature__span">VENDOR</span>
+            </h1>
+            <p class="feature-para">
+              Enjoy a centralized vendor Information and important detail <br />
+              for all your suppliers and customers. Stay ensured of your <br />
+              inventory fulfilment along with efficient management of <br />
+              vendor interactions.
+            </p>
           </div>
-          <div class="pricing-button-wrapper">
-            <button class="pricing-contact-button">
-              CONTACT US
-            </button>
+
+          <div class="vendor-wrapper">
+            <div class="features__image image-half">
+              <img
+                class="features__img"
+                src="assets/feature-img-04.png"
+                alt=""
+              />
+            </div>
+
+            <div class="spacer"></div>
+
+            <h1 class="feature-title">
+              MANAGE <span class="feature__span">VENDOR</span>
+            </h1>
+            <p class="feature-para">
+              Enjoy a centralized vendor Information and important detail <br />
+              for all your suppliers and customers. Stay ensured of your <br />
+              inventory fulfilment along with efficient management of <br />
+              vendor interactions.
+            </p>
           </div>
         </div>
 
-        <div class="pricing-grid-item">
-          <div class="grid-content-wrapper">
+        <div class="spacer"></div>
 
-            <div class="pricing-title-wrapper">
-              <div class="pricing-icon">
-                <img src="assets/enterprise-icon.svg" alt="" class="pricing__icon">
-              </div>
-              <div class="pricing-plan-box">
-                <p class="pricing-plan-title">Free Forever</p>
-                <p class="pricing-plan-detail">For individual outlets,
-                  retailers and shops with few
-                  or limited staffing.</p>
-              </div>
-            </div>
-            <div class="pricing-display-box">
-              FREE.ALWAYS.
-            </div>
+        <div class="features__image">
+          <img class="features__img" src="assets/feature-img-05.png" alt="" />
+        </div>
 
-            <ul class="pricing-plan-list">
-              <li class="pricing-list-item">
-                Unlimited categories & item records. <span class="pricing-tag"> *</span>
-              </li>
-              <li class="pricing-list-item">
-                Unlimited supplier & customer records and details. <span class="pricing-tag"> *</span>
-              </li>
-              <li class="pricing-list-item">
-                1000 purchase and sales record<span class="pricing-tag">/month*</span>
-              </li>
-              <li class="pricing-list-item">
-                <span class="pricing-tag">One</span> Admin <span class="pricing-tag">One</span> Staff Combo.
-              </li>
-              <li class="pricing-list-item">
-                <span class="pricing-tag">Alerts</span> for item stock count.
-              </li>
-              <li class="pricing-list-item">
-                Item Transaction <span class="pricing-tag">History</span> to
-                track item sales and more..
-              </li>
-              <li class="pricing-list-item">
-                <span class="pricing-tag">Alerts</span> for item stock count.
-              </li>
-              <li class="pricing-list-item">
-                Business <span class="pricing-tag">Ledger</span>to stay on
-                top of all your payments..
-              </li>
-              <li class="pricing-list-item">
-                <span class="pricing-tag">Essential</span> customer support
-                through email and phone.
-              </li>
-              <li class="pricing-list-item">
-                <span class="pricing-tag">Generate</span> and export summary
-                and <span class="pricing-tag">reports. *</span>
-              </li>
-              <li class="pricing-list-item">
-                Customizable digital <span class="pricing-tag">business card</span>
-                to share among parties.
-              </li>
-            </ul>
+        <div class="spacer"></div>
+
+        <div class="transaction-content-wrapper">
+          <h1 class="feature-title">
+            TRACK ALL <br /><span class="feature__span">TRANSACTIONS</span>
+          </h1>
+          <p class="feature-para">
+            Manage and track all your transactions. <br />
+            <br />
+
+            Set yourself apart with accurate records, <br />
+            monitor cash flows and ensure <br />
+            the financial health of your business.
+          </p>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="pos-wrapper">
+          <div class="features__image image-half">
+            <img class="features__img" src="assets/feature-img-06.png" alt="" />
           </div>
-          <div class="pricing-button-wrapper">
-            <button class="pricing-contact-button">
-              CONTACT US
-            </button>
+
+          <div class="pos-content">
+            <h1 class="feature-title">
+              EASY <span class="feature__span">POS</span>
+            </h1>
+            <p class="feature-para">
+              Streamline the point-of-sale <br />process, making it simple and
+              <br />efficient for businesses to <br />handle transactions.
+              <br />
+              <br />
+
+              Tailored to meet the needs of <br />both small and large
+              <br />businesses, ensuring a <br />seamless checkout experience.
+            </p>
+
+            <div class="benefit-wrapper">
+              <div class="benefit-slice">
+                <img src="assets/speed.svg" alt="" class="benefit-icon" />
+                <p class="benefit-para">
+                  Speed up business <br />
+                  functions with team.
+                </p>
+              </div>
+              <div class="benefit-slice">
+                <img src="assets/access.svg" alt="" class="benefit-icon" />
+                <p class="benefit-para">
+                  Manage all user roles <br />
+                  and their accesses.
+                </p>
+              </div>
+              <div class="benefit-slice">
+                <img src="assets/scale.svg" alt="" class="benefit-icon" />
+                <p class="benefit-para">
+                  Scale your team as <br />
+                  your business grows.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <h1 class="pricing-compare__header">Compare All Plans</h1>
-
-      <div class="compare-chart">
-        <div class="compare-chart__heading">Features/Plans</div>
-        <div class="compare-chart__heading">Starter</div>
-        <div class="compare-chart__heading">Premium</div>
-        <div class="compare-chart__heading">Enterprise</div>
-      </div>
-
-      <div class="feature-group__header">Inventory</div>
-      <div class="feature-slice">
-        <div class="feature-slice__title">Item Records</div>
-        <div class="feature-slice__title">200</div>
-        <div class="feature-slice__title">2000</div>
-        <div class="feature-slice__title">Unlimited</div>
-      </div>
-      <div class="feature-slice accent-light">
-        <div class="feature-slice__title">Categorisation</div>
-        <div class="feature-slice__title">Unlimited</div>
-        <div class="feature-slice__title">Unlimited</div>
-        <div class="feature-slice__title">Unlimited</div>
-      </div>
-      <div class="feature-slice">
-        <div class="feature-slice__title">Stats</div>
-        <div class="feature-slice__title">Last 28 days</div>
-        <div class="feature-slice__title">Unlimited</div>
-        <div class="feature-slice__title">Unlimited</div>
-      </div>
-      <div class="feature-slice accent-light">
-        <div class="feature-slice__title">Alerts</div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title">Custom</div>
-      </div>
-      <div class="feature-slice">
-        <div class="feature-slice__title">Transaction History</div>
-        <div class="feature-slice__title">Last 28 days</div>
-        <div class="feature-slice__title">Unlimited</div>
-        <div class="feature-slice__title">Unlimited</div>
-      </div>
-
-      <div class="feature-group__header">Staffing</div>
-      <div class="feature-slice">
-        <div class="feature-slice__title">License User</div>
-        <div class="feature-slice__title">1 admin & 1 Staff</div>
-        <div class="feature-slice__title">3 user with custom role</div>
-        <div class="feature-slice__title">Unlimited</div>
-      </div>
-      <div class="feature-slice accent-light">
-        <div class="feature-slice__title">User Roles</div>
-        <div class="feature-slice__title">4</div>
-        <div class="feature-slice__title">8</div>
-        <div class="feature-slice__title">On Demand</div>
-      </div>
-      <div class="feature-slice">
-        <div class="feature-slice__title">User Ledger</div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-      </div>
-      <div class="feature-slice accent-light">
-        <div class="feature-slice__title">User Add On</div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/cross-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-      </div>
-
-
-      <div class="feature-group__header">Reporting</div>
-      <div class="feature-slice">
-        <div class="feature-slice__title">Supplier Ledger</div>
-        <div class="feature-slice__title">Last 28 days</div>
-        <div class="feature-slice__title">Unlimited</div>
-        <div class="feature-slice__title">Unlimited</div>
-      </div>
-      <div class="feature-slice accent-light">
-        <div class="feature-slice__title">Customer Ledger</div>
-        <div class="feature-slice__title">Last 28 days</div>
-        <div class="feature-slice__title">Unlimited</div>
-        <div class="feature-slice__title">Unlimited</div>
-      </div>
-      <div class="feature-slice">
-        <div class="feature-slice__title">Miscellaneous A/C</div>
-        <div class="feature-slice__title">Last 28 days</div>
-        <div class="feature-slice__title">Unlimited</div>
-        <div class="feature-slice__title">Unlimited</div>
-      </div>
-      <div class="feature-slice accent-light">
-        <div class="feature-slice__title">Day Book</div>
-        <div class="feature-slice__title">Last 28 days</div>
-        <div class="feature-slice__title">Unlimited</div>
-        <div class="feature-slice__title">Unlimited</div>
-      </div>
-      <div class="feature-slice">
-        <div class="feature-slice__title">Month Book</div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/cross-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-      </div>
-      <div class="feature-slice accent-light">
-        <div class="feature-slice__title">Quarter Book</div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/cross-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-      </div>
-      <div class="feature-slice">
-        <div class="feature-slice__title">Year Book</div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/cross-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-      </div>
-      <div class="feature-slice accent-light">
-        <div class="feature-slice__title">Purchase Book</div>
-        <div class="feature-slice__title">Last 28 days</div>
-        <div class="feature-slice__title">Unlimited</div>
-        <div class="feature-slice__title">Unlimited</div>
-      </div>
-      <div class="feature-slice">
-        <div class="feature-slice__title">Sales Book</div>
-        <div class="feature-slice__title">Last 28 days</div>
-        <div class="feature-slice__title">Unlimited</div>
-        <div class="feature-slice__title">Unlimited</div>
-      </div>
-      <div class="feature-slice accent-light">
-        <div class="feature-slice__title">Export of Report</div>
-        <div class="feature-slice__title">Last 28 days</div>
-        <div class="feature-slice__title">1 year</div>
-        <div class="feature-slice__title">Unlimited</div>
-      </div>
-
-      <div class="feature-group__header">Point of Sale (POS)</div>
-      <div class="feature-slice">
-        <div class="feature-slice__title">Integrated Inventory</div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-      </div>
-      <div class="feature-slice accent-light">
-        <div class="feature-slice__title">Integrated Ledger</div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-      </div>
-      <div class="feature-slice">
-        <div class="feature-slice__title">Per Item Discounting</div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-      </div>
-      <div class="feature-slice accent-light">
-        <div class="feature-slice__title">Partial Payment Acceptance</div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-      </div>
-      <div class="feature-slice">
-        <div class="feature-slice__title">Quick View of Available Stock</div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-      </div>
-      <div class="feature-slice accent-light">
-        <div class="feature-slice__title">Share/Print Invoice</div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-      </div>
-      <div class="feature-slice">
-        <div class="feature-slice__title">Point of Purchase Support</div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/cross-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/cross-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-      </div>
-      <div class="feature-slice accent-light">
-        <div class="feature-slice__title">Invoicing Limit</div>
-        <div class="feature-slice__title">300/month</div>
-        <div class="feature-slice__title">Unlimited</div>
-        <div class="feature-slice__title">Unlimited</div>
-      </div>
-
-      <div class="feature-group__header">Integration & Support</div>
-      <div class="feature-slice">
-        <div class="feature-slice__title">API</div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/cross-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/cross-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-      </div>
-      <div class="feature-slice accent-light">
-        <div class="feature-slice__title">Whatsapp Enabled Alerts</div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/cross-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/cross-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-      </div>
-      <div class="feature-slice">
-        <div class="feature-slice__title">Dynamic Imports/Exports</div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/cross-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/cross-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-      </div>
-      <div class="feature-slice accent-light">
-        <div class="feature-slice__title">Custom Feature</div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/cross-icon.svg" alt=""></div>
-        <div class="feature-slice__title">Scope/Feasibility</div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-      </div>
-      <div class="feature-slice">
-        <div class="feature-slice__title">Early Access</div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/cross-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-      </div>
-      <div class="feature-slice accent-light">
-        <div class="feature-slice__title">Onboarding Training</div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-        <div class="feature-slice__title"><img class=".feature-slice__icon" src="assets/check-icon.svg" alt=""></div>
-      </div>
-      <div class="feature-slice">
-        <div class="feature-slice__title">Phone/Email/Personal Support</div>
-        <div class="feature-slice__title">Email</div>
-        <div class="feature-slice__title">Email and Phone</div>
-        <div class="feature-slice__title">All</div>
-      </div>
-
-
+      </main>
     </section>
-  </main>
 
-  <section class="tablet">
-    <div class="tablet-wrapper">
-      <div class="report-wrapper">
-        <h1 class="report__header">
-          Current methods to handle <br>inventory management operations.
-        </h1>
-        <div class="data-grid">
-          <div class="grid-item">
-            <h2 class="report__percentage">41%</h2>
-            <h3 class="report__method">Manual Methods</h3>
-            <div class="report__detail">
-              Buyers use manual <br>
-              methods to log their <br>
-              inventory holding and <br>
-              keep track of what <br>
-              they have in stock.
-            </div>
-          </div>
-          <div class="grid-item">
-            <h2 class="report__percentage">26%</h2>
-            <h3 class="report__method">Spreadsheets</h3>
-            <div class="report__detail">
-              Buyers use<br>
-              spreadsheets to<br>
-              keep track of inventory<br>
-              and manage data sets<br>
-              related to storage <br>
-              and shipping.
-            </div>
-          </div>
-          <div class="grid-item">
-            <h2 class="report__percentage">26%</h2>
-            <h3 class="report__method">Third-Party Software</h3>
-            <div class="report__detail">
-              Buyers use third- <br>
-              party software across <br>
-              categories such as <br>
-              accounting, database <br>
-              management and POS <br>
-              to handle inventory <br>
-              management operations.
-            </div>
-          </div>
+    <div class="advantage">
+      <div class="advantages">
+        <div class="advantage__alerts advantage-info">Real Time Alerts</div>
+        <div class="advantage__vendor advantage-info">Vendor Relations</div>
+        <div class="advantage__records advantage-info">
+          Accurate Intact Records
         </div>
-
-        <div class="report-publisher">
-          <div class="report__author">Gartner &#174;</div>
-          <div class="report__text">Digital Markets.</div>
+        <div class="advantage__team advantage-info">Onboard Teams</div>
+        <div class="advantage__cashflow advantage-info">
+          Cash Flow Management
         </div>
-      </div>
-
-      <div class="tablet-image">
-        <img src="assets/report-section-image.png" alt="" class="tablet__image">
+        <div class="advantage__reports advantage-info">
+          Reporting Imports & Exports
+        </div>
+        <div class="advantage__pos advantage-info">POS</div>
+        <div class="advantage__discount advantage-info">Unit Discounting</div>
+        <div class="advantage__payment advantage-info">Partial Payment</div>
+        <div class="advantage__history advantage-info">
+          Item Transaction History
+        </div>
+        <div class="advantage__inventory advantage-info">
+          Simplified Inventory
+        </div>
+        <div class="advantage__ledger advantage-info">Digital Ledger</div>
+        <div class="advantage__support advantage-info">Relentless Support</div>
       </div>
     </div>
-  </section>
 
-  <main class="main">
+    <section class="showcase">
+      <div class="showcase__message">GET BILLTRO GET BETTER</div>
+      <img src="assets/phone-left-1.png" alt="" class="showcase-img showcase-one" />
+      <img src="assets/phone-left-2.png" alt="" class="showcase-img showcase-two" />
+      <img src="assets/tablet-center.png" alt="" class="showcase-img showcase-three" />
+      <img src="assets/phone-right-1.png" alt="" class="showcase-img showcase-four" />
+      <img src="assets/phone-right-2.png" alt="" class="showcase-img showcase-five" />
+    </section>
 
-    <section class="faq">
-      <div class="faq__header">FAQ<span class="faq__tag">s</span></div>
-      <div class="faq-wrapper">
-        <div class="faq-content-wrapper">
+    <div class="text-roller">
+      <p class="roller__text">
+        BRING THE BEST * OUT OF YOUR BUSINESS * AND SOAR FORWARD * WITH BRUTAL
+        CONFIDENCE * CHASE EXCELLENCE * AND NOTHING ELSE * BRING THE BEST * OUT
+        OF YOUR BUSINESS * AND SOAR FORWARD * WITH BRUTAL CONFIDENCE * CHASE
+        EXCELLENCE * AND NOTHING ELSE
+      </p>
+    </div>
+
+    <main class="main">
+      <section class="pricing">
+        <div class="pricing__header">Pricing</div>
+        <div class="pricing__para">
+          Choose a plan that <span class="pricing__para--tag">grows</span> with
+          your <br />
+          business and unlock the power of
+          <span class="pricing__para--tag">seamless</span> <br />
+          inventory and billing management today! <br />
+          <br />
+
+          Made for businesses of all scale, nature and sizes.
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-grid-item">
+            <div class="grid-content-wrapper">
+              <div class="pricing-title-wrapper">
+                <div class="pricing-icon">
+                  <img
+                    src="assets/free-forever-icon.svg"
+                    alt=""
+                    class="pricing__icon"
+                  />
+                </div>
+                <div class="pricing-plan-box">
+                  <p class="pricing-plan-title">Free Forever</p>
+                  <p class="pricing-plan-detail">
+                    For individual outlets, retailers and shops with few or
+                    limited staffing.
+                  </p>
+                </div>
+              </div>
+              <div class="pricing-display-box">FREE.ALWAYS.</div>
+              <ul class="pricing-plan-list">
+                <li class="pricing-list-item">
+                  Unlimited categories & item records.
+                  <span class="pricing-tag"> *</span>
+                </li>
+                <li class="pricing-list-item">
+                  Unlimited supplier & customer records and details.
+                  <span class="pricing-tag"> *</span>
+                </li>
+                <li class="pricing-list-item">
+                  1000 purchase and sales record<span class="pricing-tag"
+                    >/month*</span
+                  >
+                </li>
+                <li class="pricing-list-item">
+                  <span class="pricing-tag">One</span> Admin
+                  <span class="pricing-tag">One</span> Staff Combo.
+                </li>
+                <li class="pricing-list-item">
+                  <span class="pricing-tag">Alerts</span> for item stock count.
+                </li>
+                <li class="pricing-list-item">
+                  Item Transaction <span class="pricing-tag">History</span> to
+                  track item sales and more..
+                </li>
+                <li class="pricing-list-item">
+                  <span class="pricing-tag">Alerts</span> for item stock count.
+                </li>
+                <li class="pricing-list-item">
+                  Business <span class="pricing-tag">Ledger</span>to stay on top
+                  of all your payments..
+                </li>
+                <li class="pricing-list-item">
+                  <span class="pricing-tag">Essential</span> customer support
+                  through email and phone.
+                </li>
+                <li class="pricing-list-item">
+                  <span class="pricing-tag">Generate</span> and export summary
+                  and <span class="pricing-tag">reports. *</span>
+                </li>
+                <li class="pricing-list-item">
+                  Customizable digital
+                  <span class="pricing-tag">business card</span>
+                  to share among parties.
+                </li>
+              </ul>
+
+              <div class="pricing-note">
+                NOTE:
+                <p class="note-text">
+                  Create as many entries/records. However, with
+                  <span class="pricing-tag">Free Forever</span> plan you will
+                  only be able to view recent
+                  <span class="pricing-tag">28 days</span> of purchase and sales
+                  records.
+                </p>
+              </div>
+            </div>
+            <div class="pricing-button-wrapper">
+              <button class="pricing-download-button">DOWNLOAD NOW</button>
+            </div>
+          </div>
+
+          <div class="pricing-grid-item">
+            <div class="grid-content-wrapper">
+              <div class="pricing-title-wrapper">
+                <div class="pricing-icon">
+                  <img
+                    src="assets/business-icon.svg"
+                    alt=""
+                    class="pricing__icon"
+                  />
+                </div>
+                <div class="pricing-plan-box">
+                  <p class="pricing-plan-title">Business</p>
+                  <p class="pricing-plan-detail">
+                    For B2Bs looking to transform their stocking and simplify
+                    the billing process.
+                  </p>
+                </div>
+              </div>
+              <div class="pricing-subscription-box">FREE.ALWAYS.</div>
+              <ul class="pricing-plan-list">
+                <li class="pricing-list-item">
+                  Unlimited categories & item records.
+                  <span class="pricing-tag"> *</span>
+                </li>
+                <li class="pricing-list-item">
+                  Unlimited supplier & customer records and details.
+                  <span class="pricing-tag"> *</span>
+                </li>
+                <li class="pricing-list-item">
+                  1000 purchase and sales record<span class="pricing-tag"
+                    >/month*</span
+                  >
+                </li>
+                <li class="pricing-list-item">
+                  <span class="pricing-tag">One</span> Admin
+                  <span class="pricing-tag">One</span> Staff Combo.
+                </li>
+                <li class="pricing-list-item">
+                  <span class="pricing-tag">Alerts</span> for item stock count.
+                </li>
+                <li class="pricing-list-item">
+                  Item Transaction <span class="pricing-tag">History</span> to
+                  track item sales and more..
+                </li>
+                <li class="pricing-list-item">
+                  <span class="pricing-tag">Alerts</span> for item stock count.
+                </li>
+                <li class="pricing-list-item">
+                  Business <span class="pricing-tag">Ledger</span>to stay on top
+                  of all your payments..
+                </li>
+                <li class="pricing-list-item">
+                  <span class="pricing-tag">Essential</span> customer support
+                  through email and phone.
+                </li>
+                <li class="pricing-list-item">
+                  <span class="pricing-tag">Generate</span> and export summary
+                  and <span class="pricing-tag">reports. *</span>
+                </li>
+                <li class="pricing-list-item">
+                  Customizable digital
+                  <span class="pricing-tag">business card</span>
+                  to share among parties.
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-button-wrapper">
+              <button class="pricing-contact-button">CONTACT US</button>
+            </div>
+          </div>
+
+          <div class="pricing-grid-item">
+            <div class="grid-content-wrapper">
+              <div class="pricing-title-wrapper">
+                <div class="pricing-icon">
+                  <img
+                    src="assets/enterprise-icon.svg"
+                    alt=""
+                    class="pricing__icon"
+                  />
+                </div>
+                <div class="pricing-plan-box">
+                  <p class="pricing-plan-title">Free Forever</p>
+                  <p class="pricing-plan-detail">
+                    For individual outlets, retailers and shops with few or
+                    limited staffing.
+                  </p>
+                </div>
+              </div>
+              <div class="pricing-display-box">FREE.ALWAYS.</div>
+
+              <ul class="pricing-plan-list">
+                <li class="pricing-list-item">
+                  Unlimited categories & item records.
+                  <span class="pricing-tag"> *</span>
+                </li>
+                <li class="pricing-list-item">
+                  Unlimited supplier & customer records and details.
+                  <span class="pricing-tag"> *</span>
+                </li>
+                <li class="pricing-list-item">
+                  1000 purchase and sales record<span class="pricing-tag"
+                    >/month*</span
+                  >
+                </li>
+                <li class="pricing-list-item">
+                  <span class="pricing-tag">One</span> Admin
+                  <span class="pricing-tag">One</span> Staff Combo.
+                </li>
+                <li class="pricing-list-item">
+                  <span class="pricing-tag">Alerts</span> for item stock count.
+                </li>
+                <li class="pricing-list-item">
+                  Item Transaction <span class="pricing-tag">History</span> to
+                  track item sales and more..
+                </li>
+                <li class="pricing-list-item">
+                  <span class="pricing-tag">Alerts</span> for item stock count.
+                </li>
+                <li class="pricing-list-item">
+                  Business <span class="pricing-tag">Ledger</span>to stay on top
+                  of all your payments..
+                </li>
+                <li class="pricing-list-item">
+                  <span class="pricing-tag">Essential</span> customer support
+                  through email and phone.
+                </li>
+                <li class="pricing-list-item">
+                  <span class="pricing-tag">Generate</span> and export summary
+                  and <span class="pricing-tag">reports. *</span>
+                </li>
+                <li class="pricing-list-item">
+                  Customizable digital
+                  <span class="pricing-tag">business card</span>
+                  to share among parties.
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-button-wrapper">
+              <button class="pricing-contact-button">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="pricing-compare__header">Compare All Plans</h1>
+
+        <div class="compare-chart">
+          <div class="compare-chart__heading">Features/Plans</div>
+          <div class="compare-chart__heading">Starter</div>
+          <div class="compare-chart__heading">Premium</div>
+          <div class="compare-chart__heading">Enterprise</div>
+        </div>
+
+        <div class="feature-group__header">Inventory</div>
+        <div class="feature-slice">
+          <div class="feature-slice__title">Item Records</div>
+          <div class="feature-slice__title">200</div>
+          <div class="feature-slice__title">2000</div>
+          <div class="feature-slice__title">Unlimited</div>
+        </div>
+        <div class="feature-slice accent-light">
+          <div class="feature-slice__title">Categorisation</div>
+          <div class="feature-slice__title">Unlimited</div>
+          <div class="feature-slice__title">Unlimited</div>
+          <div class="feature-slice__title">Unlimited</div>
+        </div>
+        <div class="feature-slice">
+          <div class="feature-slice__title">Stats</div>
+          <div class="feature-slice__title">Last 28 days</div>
+          <div class="feature-slice__title">Unlimited</div>
+          <div class="feature-slice__title">Unlimited</div>
+        </div>
+        <div class="feature-slice accent-light">
+          <div class="feature-slice__title">Alerts</div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">Custom</div>
+        </div>
+        <div class="feature-slice">
+          <div class="feature-slice__title">Transaction History</div>
+          <div class="feature-slice__title">Last 28 days</div>
+          <div class="feature-slice__title">Unlimited</div>
+          <div class="feature-slice__title">Unlimited</div>
+        </div>
+
+        <div class="feature-group__header">Staffing</div>
+        <div class="feature-slice">
+          <div class="feature-slice__title">License User</div>
+          <div class="feature-slice__title">1 admin & 1 Staff</div>
+          <div class="feature-slice__title">3 user with custom role</div>
+          <div class="feature-slice__title">Unlimited</div>
+        </div>
+        <div class="feature-slice accent-light">
+          <div class="feature-slice__title">User Roles</div>
+          <div class="feature-slice__title">4</div>
+          <div class="feature-slice__title">8</div>
+          <div class="feature-slice__title">On Demand</div>
+        </div>
+        <div class="feature-slice">
+          <div class="feature-slice__title">User Ledger</div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="feature-slice accent-light">
+          <div class="feature-slice__title">User Add On</div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/cross-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="feature-group__header">Reporting</div>
+        <div class="feature-slice">
+          <div class="feature-slice__title">Supplier Ledger</div>
+          <div class="feature-slice__title">Last 28 days</div>
+          <div class="feature-slice__title">Unlimited</div>
+          <div class="feature-slice__title">Unlimited</div>
+        </div>
+        <div class="feature-slice accent-light">
+          <div class="feature-slice__title">Customer Ledger</div>
+          <div class="feature-slice__title">Last 28 days</div>
+          <div class="feature-slice__title">Unlimited</div>
+          <div class="feature-slice__title">Unlimited</div>
+        </div>
+        <div class="feature-slice">
+          <div class="feature-slice__title">Miscellaneous A/C</div>
+          <div class="feature-slice__title">Last 28 days</div>
+          <div class="feature-slice__title">Unlimited</div>
+          <div class="feature-slice__title">Unlimited</div>
+        </div>
+        <div class="feature-slice accent-light">
+          <div class="feature-slice__title">Day Book</div>
+          <div class="feature-slice__title">Last 28 days</div>
+          <div class="feature-slice__title">Unlimited</div>
+          <div class="feature-slice__title">Unlimited</div>
+        </div>
+        <div class="feature-slice">
+          <div class="feature-slice__title">Month Book</div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/cross-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="feature-slice accent-light">
+          <div class="feature-slice__title">Quarter Book</div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/cross-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="feature-slice">
+          <div class="feature-slice__title">Year Book</div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/cross-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="feature-slice accent-light">
+          <div class="feature-slice__title">Purchase Book</div>
+          <div class="feature-slice__title">Last 28 days</div>
+          <div class="feature-slice__title">Unlimited</div>
+          <div class="feature-slice__title">Unlimited</div>
+        </div>
+        <div class="feature-slice">
+          <div class="feature-slice__title">Sales Book</div>
+          <div class="feature-slice__title">Last 28 days</div>
+          <div class="feature-slice__title">Unlimited</div>
+          <div class="feature-slice__title">Unlimited</div>
+        </div>
+        <div class="feature-slice accent-light">
+          <div class="feature-slice__title">Export of Report</div>
+          <div class="feature-slice__title">Last 28 days</div>
+          <div class="feature-slice__title">1 year</div>
+          <div class="feature-slice__title">Unlimited</div>
+        </div>
+
+        <div class="feature-group__header">Point of Sale (POS)</div>
+        <div class="feature-slice">
+          <div class="feature-slice__title">Integrated Inventory</div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="feature-slice accent-light">
+          <div class="feature-slice__title">Integrated Ledger</div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="feature-slice">
+          <div class="feature-slice__title">Per Item Discounting</div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="feature-slice accent-light">
+          <div class="feature-slice__title">Partial Payment Acceptance</div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="feature-slice">
+          <div class="feature-slice__title">Quick View of Available Stock</div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="feature-slice accent-light">
+          <div class="feature-slice__title">Share/Print Invoice</div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="feature-slice">
+          <div class="feature-slice__title">Point of Purchase Support</div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/cross-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/cross-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="feature-slice accent-light">
+          <div class="feature-slice__title">Invoicing Limit</div>
+          <div class="feature-slice__title">300/month</div>
+          <div class="feature-slice__title">Unlimited</div>
+          <div class="feature-slice__title">Unlimited</div>
+        </div>
+
+        <div class="feature-group__header">Integration & Support</div>
+        <div class="feature-slice">
+          <div class="feature-slice__title">API</div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/cross-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/cross-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="feature-slice accent-light">
+          <div class="feature-slice__title">Whatsapp Enabled Alerts</div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/cross-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/cross-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="feature-slice">
+          <div class="feature-slice__title">Dynamic Imports/Exports</div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/cross-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/cross-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="feature-slice accent-light">
+          <div class="feature-slice__title">Custom Feature</div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/cross-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">Scope/Feasibility</div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="feature-slice">
+          <div class="feature-slice__title">Early Access</div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/cross-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="feature-slice accent-light">
+          <div class="feature-slice__title">Onboarding Training</div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-slice__title">
+            <img
+              class=".feature-slice__icon"
+              src="assets/check-icon.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="feature-slice">
+          <div class="feature-slice__title">Phone/Email/Personal Support</div>
+          <div class="feature-slice__title">Email</div>
+          <div class="feature-slice__title">Email and Phone</div>
+          <div class="feature-slice__title">All</div>
+        </div>
+      </section>
+    </main>
+
+    <section class="tablet">
+      <div class="tablet-wrapper">
+        <div class="report-wrapper">
+          <h1 class="report__header">
+            Current methods to handle <br />inventory management operations.
+          </h1>
+          <div class="data-grid">
+            <div class="grid-item">
+              <h2 class="report__percentage">41%</h2>
+              <h3 class="report__method">Manual Methods</h3>
+              <div class="report__detail">
+                Buyers use manual <br />
+                methods to log their <br />
+                inventory holding and <br />
+                keep track of what <br />
+                they have in stock.
+              </div>
+            </div>
+            <div class="grid-item">
+              <h2 class="report__percentage">26%</h2>
+              <h3 class="report__method">Spreadsheets</h3>
+              <div class="report__detail">
+                Buyers use<br />
+                spreadsheets to<br />
+                keep track of inventory<br />
+                and manage data sets<br />
+                related to storage <br />
+                and shipping.
+              </div>
+            </div>
+            <div class="grid-item">
+              <h2 class="report__percentage">26%</h2>
+              <h3 class="report__method">Third-Party Software</h3>
+              <div class="report__detail">
+                Buyers use third- <br />
+                party software across <br />
+                categories such as <br />
+                accounting, database <br />
+                management and POS <br />
+                to handle inventory <br />
+                management operations.
+              </div>
+            </div>
+          </div>
+
+          <div class="report-publisher">
+            <div class="report__author">Gartner &#174;</div>
+            <div class="report__text">Digital Markets.</div>
+          </div>
+        </div>
+
+        <div class="tablet-image">
+          <img
+            src="assets/report-section-image.png"
+            alt=""
+            class="tablet__image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <main class="main">
+      <section class="faq">
+        <div class="faq__header">FAQ<span class="faq__tag">s</span></div>
+        <div class="faq-wrapper">
+          <div class="faq-content-wrapper">
+            <div class="faq__para">
+              We have addressed few common questions about our product. <br />
+              Here you will find detailed answer regarding product usage,
+              <br />compatibility and seamless experience.<br /><br />
+            </div>
+          </div>
+
+          <div class="accordion-wrapper">
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                  <span class="accordion-title">Accordion Title</span
+                  ><span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>Your Content Goes Here...</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-2" aria-expanded="false">
+                  <span class="accordion-title"> Accordion Title</span
+                  ><span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>Your Content Goes Here...</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false">
+                  <span class="accordion-title">Accordion Title</span
+                  ><span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>Your Content Goes Here...</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false">
+                  <span class="accordion-title">Accordion Title</span
+                  ><span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>Your Content Goes Here...</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false">
+                  <span class="accordion-title">Accordion Title</span
+                  ><span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>Your Content Goes Here...</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false">
+                  <span class="accordion-title">Accordion Title</span
+                  ><span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>Your Content Goes Here...</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false">
+                  <span class="accordion-title">Accordion Title</span
+                  ><span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>Your Content Goes Here...</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false">
+                  <span class="accordion-title">Accordion Title</span
+                  ><span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>Your Content Goes Here...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="faq__para">
-            We have addressed few common questions about our product. <br>
-            Here you will
-            find detailed answer regarding
-            product usage, <br>compatibility
-            and seamless experience.<br><br>
+            While common queries are discussed in
+            <span class="faq__para--tag">FAQ.</span> <br />
+            Our video Library covers major nooks and corners of
+            <span class="faq__para--tag">Billtro</span>.<br />
+            <br />
           </div>
-        </div>
 
-        <div class="accordion-wrapper">
-          <div class="accordion">
-            <div class="accordion-item">
-              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Accordion
-                  Title</span><span class="icon" aria-hidden="true"></span></button>
-              <div class="accordion-content">
-                <p>Your Content Goes Here...</p>
+          <button class="faq__button">TRAINING VIDEOS</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer__header">
+          DO MORE <br />
+          WITH <span class="footer__tag">BILLTRO</span>.
+        </div>
+        <div class="footer-main-wrapper">
+          <div class="footer-content-wrapper">
+            <div class="footer-detail">
+              <div class="footer-contact">
+                <div class="footer__title">Phone:</div>
+                <div class="footer__text">+977-1122334455</div>
+                <div class="footer__text">+977-1122334455</div>
+              </div>
+              <div class="footer-contact">
+                <div class="footer__title">Address:</div>
+                <div class="footer__text">New Baneshwor, Kathmandu</div>
+                <div class="footer__text">Janaki Chowk, Janakpur</div>
+              </div>
+              <div class="footer-contact">
+                <div class="footer__title">Mail:</div>
+                <div class="footer__mail">
+                  <a href="#" class="footer__mail">business@billtro.com</a>
+                </div>
+              </div>
+              <div class="footer-contact">
+                <div class="footer__title">Socials:</div>
+                <div class="social-icons">
+                  <a href="#"
+                    ><img src="assets/ig-icon.svg" alt="" class="footer__icon"
+                  /></a>
+                  <a href="#"
+                    ><img src="assets/fb-icon.svg" alt="" class="footer__icon"
+                  /></a>
+                  <a href="#"
+                    ><img src="assets/lin-icon.svg" alt="" class="footer__icon"
+                  /></a>
+                  <a href="#"
+                    ><img src="assets/tw-icon.svg" alt="" class="footer__icon"
+                  /></a>
+                  <a href="#"
+                    ><img src="assets/yt-icon.svg" alt="" class="footer__icon"
+                  /></a>
+                </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title"> Accordion
-                  Title</span><span class="icon" aria-hidden="true"></span></button>
-              <div class="accordion-content">
-                <p>Your Content Goes Here...</p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Accordion
-                  Title</span><span class="icon" aria-hidden="true"></span></button>
-              <div class="accordion-content">
-                <p>Your Content Goes Here...</p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Accordion
-                  Title</span><span class="icon" aria-hidden="true"></span></button>
-              <div class="accordion-content">
-                <p>Your Content Goes Here...</p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Accordion
-                  Title</span><span class="icon" aria-hidden="true"></span></button>
-              <div class="accordion-content">
-                <p>Your Content Goes Here...</p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Accordion
-                  Title</span><span class="icon" aria-hidden="true"></span></button>
-              <div class="accordion-content">
-                <p>Your Content Goes Here...</p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Accordion
-                  Title</span><span class="icon" aria-hidden="true"></span></button>
-              <div class="accordion-content">
-                <p>Your Content Goes Here...</p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Accordion
-                  Title</span><span class="icon" aria-hidden="true"></span></button>
-              <div class="accordion-content">
-                <p>Your Content Goes Here...</p>
+            <div class="footer-bottom">
+              <div class="footer__message">
+                PRIDE OF <a href="#" class="footer__message--tag">SEVRUM</a>
               </div>
             </div>
           </div>
-        </div>
+          <form class="footer-form-wrapper" id="contactForm">
+            <div class="footer__label">
+              <label for="name"
+                >It all starts with your good name<span class="form__tag"
+                  >*</span
+                ></label
+              >
+            </div>
+            <br />
+            <input
+              class="footer__input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            /><br />
+            <div id="name-error" class="error-message"></div>
 
-        <div class="faq__para">
-          While common queries are
-          discussed in <span class="faq__para--tag">FAQ.</span> <br>
-          Our video Library covers major
-          nooks and corners of <span class="faq__para--tag">Billtro</span>.<br> <br>
-        </div>
+            <div class="footer__label">
+              <label for="email"
+                >How can our team reach you<span class="form__tag"
+                  >*</span
+                ></label
+              >
+            </div>
+            <br />
+            <input
+              class="footer__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            /><br />
+            <div id="email-error" class="error-message"></div>
 
-        <button class="faq__button">TRAINING VIDEOS</button>
+            <div class="footer__label">
+              <label for="phone">Let us call you</label>
+            </div>
+            <br />
+            <input
+              class="footer__input"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone number"
+              required
+            /><br />
+            <div id="phone-error" class="error-message"></div>
+
+            <div class="footer__label">
+              <label for="message"
+                >Excited to hear from you<span class="form__tag">*</span></label
+              >
+            </div>
+            <br />
+            <input
+              class="footer__input"
+              type="text"
+              id="message"
+              name="message"
+              placeholder="Enter your message"
+              required
+            /><br />
+            <div id="message-error" class="error-message"></div>
+
+            <button class="form__button" type="submit">SEND MESSAGE</button>
+          </form>
+        </div>
       </div>
+    </footer>
 
-    </section>
-  </main>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
 
+          // Clear previous error messages and highlights
+          clearErrors();
 
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer__header">
-        DO MORE <br> WITH <span class="footer__tag">BILLTRO</span>.
-      </div>
-      <div class="footer-main-wrapper">
-        <div class="footer-content-wrapper">
-          <div class="footer-detail">
-            <div class="footer-contact">
-              <div class="footer__title">Phone:</div>
-              <div class="footer__text">+977-1122334455</div>
-              <div class="footer__text">+977-1122334455</div>
-            </div>
-            <div class="footer-contact">
-              <div class="footer__title">Address:</div>
-              <div class="footer__text">New Baneshwor, Kathmandu</div>
-              <div class="footer__text">Janaki Chowk, Janakpur</div>
-            </div>
-            <div class="footer-contact">
-              <div class="footer__title">Mail:</div>
-              <div class="footer__mail"><a href="#" class="footer__mail">business@billtro.com</a></div>
-            </div>
-            <div class="footer-contact">
-              <div class="footer__title">Socials:</div>
-              <div class="social-icons">
-                <a href="#"><img src="assets/ig-icon.svg" alt="" class="footer__icon"></a>
-                <a href="#"><img src="assets/fb-icon.svg" alt="" class="footer__icon"></a>
-                <a href="#"><img src="assets/lin-icon.svg" alt="" class="footer__icon"></a>
-                <a href="#"><img src="assets/tw-icon.svg" alt="" class="footer__icon"></a>
-                <a href="#"><img src="assets/yt-icon.svg" alt="" class="footer__icon"></a>
-              </div>
-            </div>
-          </div>
-          <div class="footer-bottom">
-            <div class="footer__message">PRIDE OF <a href="#" class="footer__message--tag">SEVRUM</a></div>
-          </div>
-        </div>
-        <form class="footer-form-wrapper" id="contactForm">
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const phone = document.getElementById("phone").value;
+          const message = document.getElementById("message").value;
+          const title = "BILLTRO";
 
-          <div class="footer__label"><label for="name">It all starts with your good name<span
-                class="form__tag">*</span></label></div><br>
-          <input class="footer__input" type="text" id="name" name="name" placeholder="Enter your name" required><br>
-          <div id="name-error" class="error-message"></div>
+          const data = {
+            name,
+            email,
+            phone,
+            message,
+            title,
+          };
 
-          <div class="footer__label"><label for="email">How can our team reach you<span
-                class="form__tag">*</span></label></div><br>
-          <input class="footer__input" type="email" id="email" name="email" placeholder="Enter your email address" required><br>
-          <div id="email-error" class="error-message"></div>
+          fetch("https://sevrum-server.onrender.com/api/contact", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              if (data.success) {
+                alert("Message sent successfully!");
+                // Optionally reset the form
+                document.getElementById("contactForm").reset();
+              } else {
+                handleErrors(data.errors);
+              }
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              alert("Error sending message. Please try again later.");
+            });
+        });
 
-          <div class="footer__label"><label for="phone">Let us call you</label></div>
-          <br>
-          <input class="footer__input" type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br>
-          <div id="phone-error" class="error-message"></div>
+      function handleErrors(errors) {
+        for (const field in errors) {
+          if (errors.hasOwnProperty(field)) {
+            const errorMessage = errors[field];
+            const inputElement = document.getElementById(field);
+            const errorElement = document.getElementById(`${field}-error`);
 
-          <div class="footer__label"><label for="message">Excited to hear from you<span
-                class="form__tag">*</span></label></div><br>
-          <input class="footer__input" type="text" id="message" name="message" placeholder="Enter your message" required><br>
-          <div id="message-error" class="error-message"></div>
-
-          <button class="form__button" type="submit">SEND MESSAGE</button>
-        </form>
-      </div>
-
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-
-      // Clear previous error messages and highlights
-      clearErrors();
-
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const phone = document.getElementById('phone').value;
-      const message = document.getElementById('message').value;
-      const title = "BILLTRO"
-
-      const data = {
-        name,
-        email,
-        phone,
-        message,
-        title
-      };
-
-      fetch('https://sevrum-server.onrender.com/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-      })
-      .then(response => response.json())
-      .then(data => {
-      if (data.success) {
-        alert('Message sent successfully!');
-        // Optionally reset the form
-        document.getElementById('contactForm').reset();
-        } else {
-          handleErrors(data.errors);
-        }
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-        alert('Error sending message. Please try again later.');
-      });
-    });
-
-
-    function handleErrors(errors) {
-      for (const field in errors) {
-        if (errors.hasOwnProperty(field)) {
-          const errorMessage = errors[field];
-          const inputElement = document.getElementById(field);
-          const errorElement = document.getElementById(`${field}-error`);
-
-          if (inputElement) {
-            inputElement.classList.add('error');
-          }
-          if (errorElement) {
-            errorElement.textContent = errorMessage;
+            if (inputElement) {
+              inputElement.classList.add("error");
+            }
+            if (errorElement) {
+              errorElement.textContent = errorMessage;
+            }
           }
         }
       }
-    }
 
-    function clearErrors() {
-      const errorElements = document.querySelectorAll('.error-message');
-      const inputElements = document.querySelectorAll('.footer__input');
+      function clearErrors() {
+        const errorElements = document.querySelectorAll(".error-message");
+        const inputElements = document.querySelectorAll(".footer__input");
 
-      errorElements.forEach(errorElement => {
-        errorElement.textContent = '';
-      });
+        errorElements.forEach((errorElement) => {
+          errorElement.textContent = "";
+        });
 
-      inputElements.forEach(inputElement => {
-        inputElement.classList.remove('error');
-      });
-    }
-  </script>
+        inputElements.forEach((inputElement) => {
+          inputElement.classList.remove("error");
+        });
+      }
+    </script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-  <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
-  <!-- script -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
-  <!-- <script src="js.js"></script> -->
-  <script src="script.js"></script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+    <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <!-- <script src="js.js"></script> -->
+    <script src="script.js"></script>
+  </body>
 </html>

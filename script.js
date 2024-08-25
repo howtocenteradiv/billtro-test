@@ -1,15 +1,17 @@
+
 const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {
   console.log(e)
 })
 
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
+lenis.on('scroll', ScrollTrigger.update)
 
-requestAnimationFrame(raf)
+gsap.ticker.add((time) => {
+  lenis.raf(time * 1000)
+})
+
+gsap.ticker.lagSmoothing(0)
 
 var textWrapper = document.querySelector('.line-01');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
@@ -59,28 +61,19 @@ TweenMax.to(".box", 2.4, {
   delay: 0,
 });
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
 
+
+gsap.from('.header', {
+  y: "-100px",
+  opacity: 0,
+  duration: 1.5,
+  delay: 0.7
 });
 
-gsap.from('.header',{
-  y:"-100px",
-  opacity:0,
-  duration:1.5,
-  delay:0.7
-});
-
-gsap.from('.marketing-wrapper',{
-  opacity:0,
-  duration:1,
-  delay:1
+gsap.from('.marketing-wrapper', {
+  opacity: 0,
+  duration: 1,
+  delay: 1
 });
 
 
@@ -101,109 +94,124 @@ function toggleAccordion() {
 items.forEach(item => item.addEventListener('click', toggleAccordion));
 
 
-// Features
+// Advantages
 
-const slide = {
-  elements: gsap.utils.toArray('.slide'),
-  images: gsap.utils.toArray('.slide-img'),
-  prev: document.querySelector('.slider-button-previous'),
-  next: document.querySelector('.slider-button-next'),
-
-  duration: 1.4,
-  ease: Power4.easeInOut,
-}
-
-let current = 0;
-let total = slide.elements.length;
-const slidesWrap = gsap.utils.wrap(0, total);
-
-
-
-const slideNext = (index, direction = 1, duration = slide.duration) => {
-  const tl = gsap.timeline({ defaults: { duration: duration, ease: slide.ease } });
-
-  tl.fromTo(
-      slide.elements[index],
-      {
-          yPercent: direction > 0 ? 100 : -100,
-      },
-      {
-          yPercent: 0,
-      }
-  ).
-      fromTo(
-          slide.images[index],
-          {
-              yPercent: direction > 0 ? -100 : 100,
-              scale: 0.8,
-          },
-          {
-              yPercent: 0,
-              scale: 1,
-          },
-          0
-      );
-};
-
-const slidePrev = (index, direction = 1, duration = slide.duration) => {
-  const tl = gsap.timeline({ defaults: { duration: duration, ease: slide.ease } });
-
-  tl.to(
-      slide.elements[index],
-      {
-          yPercent: direction > 0 ? -100 : 100,
-      },
-  ).
-      to(
-          slide.images[index],
-          {
-              yPercent: direction > 0 ? 100 : -100,
-              scale: 0,
-          },
-          0
-      );
-}
-
-
-slide.elements.forEach((el, index) => {
-  index === current ? slideNext(index, 1, 0) : slidePrev(index, 1, 0);
-});
-
-
-
-slide.prev.addEventListener('click', () => {
-  const prev = current;
-  current = slidesWrap(current - 1);
-
-  slideNext(current, -1);
-  slidePrev(prev, -1);
-});
-
-slide.next.addEventListener('click', () => {
-  const prev = current;
-  current = slidesWrap(current + 1);
-
-  slideNext(current);
-  slidePrev(prev);
-});
-
-
-// Showreel
-
-window.onload = function () {
-  let cosmos = document.querySelectorAll(".cosmos");
-  let total = cosmos.length;
-
-  for(let i = 0; i < total; i++) {
-      let angle = (360/total)*i;
-      let transform = `rotate(${angle}deg) translate(55vh)`;
-      cosmos[i].style.transform = transform;
-      let cosmosItems = cosmos[i].querySelectorAll('.cosmic-item');
-
-      for(let j = 0; j < cosmosItems.length; j++) {
-          cosmosItems[j].style.animationDelay = `${j * 0.5}s`
-      }
+let tlAdvantage = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".advantages",
+    pin: true,
+    start: '50% 50%',
+    end: '150% 50%',
+    scrub: true,
   }
+});
+
+tlAdvantage.to(".advantage__inventory", {
+  opacity: 1,
+  filter: "blur(0px)"
+})
+  .to(".advantage__records", {
+    opacity: 1,
+    filter: "blur(0px)",
+    delay: -0.3
+  })
+  .to(".advantage__cashflow", {
+    opacity: 1,
+    filter: "blur(0px)",
+    delay: -0.3
+  })
+  .to(".advantage__vendor", {
+    opacity: 1,
+    filter: "blur(0px)",
+    delay: -0.3
+  })
+  .to(".advantage__pos", {
+    opacity: 1,
+    filter: "blur(0px)",
+    delay: -0.3
+  })
+  .to(".advantage__ledger", {
+    opacity: 1,
+    filter: "blur(0px)",
+    delay: -0.3
+  })
+  .to(".advantage__team", {
+    opacity: 1,
+    filter: "blur(0px)",
+    delay: -0.3
+  })
+  .to(".advantage__reports", {
+    opacity: 1,
+    filter: "blur(0px)",
+    delay: -0.3
+  })
+  .to(".advantage__payment", {
+    opacity: 1,
+    filter: "blur(0px)",
+    delay: -0.3
+  })
+  .to(".advantage__discount", {
+    opacity: 1,
+    filter: "blur(0px)",
+    delay: -0.3
+  })
+  .to(".advantage__alerts", {
+    opacity: 1,
+    filter: "blur(0px)",
+    delay: -0.3
+  })
+  .to(".advantage__history", {
+    opacity: 1,
+    filter: "blur(0px)",
+    delay: -0.3
+  })
+  .to(".advantage__support", {
+    opacity: 1,
+    filter: "blur(0px)",
+    delay: -0.3
+  })
 
 
-};
+// Showcase
+
+let th = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".showcase__message",
+    start: "0% 25%",
+    end: "50% 40%",
+    scrub: 1,
+  }
+})
+
+th.from(".showcase__message", {
+  opacity: 0,
+});
+
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".showcase",
+    start: "0% 40%",
+    end: "50% 80%",
+    scrub: 1,
+  }
+})
+
+
+tl.from(".showcase-three", {
+  bottom: "-200px",
+  opacity: 0,
+});
+
+tl.from(".showcase-two, .showcase-four", {
+  bottom: "-100px",
+  opacity: 0,
+  delay: 1
+})
+
+tl.from(".showcase-one, .showcase-five", {
+  bottom: "-50px",
+  opacity: 0,
+  delay: 1
+})
+
+// Features
