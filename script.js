@@ -77,21 +77,36 @@ gsap.from('.marketing-wrapper', {
 });
 
 
-const items = document.querySelectorAll(".accordion button");
+// FAQ Accordion
 
-function toggleAccordion() {
-  const itemToggle = this.getAttribute('aria-expanded');
+document.addEventListener("DOMContentLoaded", function () {
+  const accordions = document.querySelectorAll('.accordion-item');
 
-  for (i = 0; i < items.length; i++) {
-    items[i].setAttribute('aria-expanded', 'false');
-  }
+  accordions.forEach((accordion) => {
+      const title = accordion.querySelector('.accordion-title');
 
-  if (itemToggle == 'false') {
-    this.setAttribute('aria-expanded', 'true');
-  }
-}
+      title.addEventListener('click', () => {
+          // Close all open accordions
+          accordions.forEach((item) => {
+              if (item !== accordion) {
+                  item.classList.remove('open');
+                  item.querySelector('.accordion-content').style.display = 'none';
+              }
+          });
 
-items.forEach(item => item.addEventListener('click', toggleAccordion));
+          // Toggle the current accordion
+          const content = accordion.querySelector('.accordion-content');
+          if (accordion.classList.contains('open')) {
+              accordion.classList.remove('open');
+              content.style.display = 'none';
+          } else {
+              accordion.classList.add('open');
+              content.style.display = 'block';
+          }
+      });
+  });
+});
+
 
 
 // Advantages
@@ -215,3 +230,45 @@ tl.from(".showcase-one, .showcase-five", {
 })
 
 // Features
+
+// Scroll To Link
+
+document.querySelectorAll('.scroll-link').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
+
+// Navbar
+
+document.addEventListener('DOMContentLoaded', function() {
+  const menuIcon = document.querySelector('.menu-icon');
+  const fullScreenMenu = document.getElementById('fullScreenMenu');
+  const closeBtn = document.getElementById('closeBtn');
+  const menuLinks = document.querySelectorAll('.menu-links li a');
+
+  // Function to close the menu
+  function closeMenu() {
+      fullScreenMenu.classList.remove('show');
+      document.body.classList.remove('no-scroll');
+  }
+
+  // Open menu on menu icon click
+  menuIcon.addEventListener('click', function() {
+      fullScreenMenu.classList.add('show');
+      document.body.classList.add('no-scroll');
+  });
+
+  // Close menu on close button click
+  closeBtn.addEventListener('click', closeMenu);
+
+  // Close menu when any menu link is clicked
+  menuLinks.forEach(link => {
+      link.addEventListener('click', closeMenu);
+  });
+});

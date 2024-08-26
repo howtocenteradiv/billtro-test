@@ -22,13 +22,24 @@
       <div class="header-wrapper">
         <a href="/" class="header__logo">Billtro</a>
         <div class="header-nav">
-          <a href="#" class="header__links">FEATURES</a>
-          <a href="#" class="header__links">IMPRESSIONS</a>
-          <a href="#" class="header__links">PRICING</a>
-          <a href="#" class="header__links">CONTACT</a>
+          <a href="#features" class="header__links scroll-link">FEATURES</a>
+          <a href="#pricing" class="header__links scroll-link">PRICING</a>
+          <a href="#faq" class="header__links scroll-link">FAQ</a>
+          <a href="#contact" class="header__links scroll-link">CONTACT</a>
+          <div class="menu-icon">&#9776;</div>
         </div>
       </div>
     </header>
+
+    <div class="full-screen-menu" id="fullScreenMenu">
+      <span class="close-btn" id="closeBtn">&times;</span>
+      <ul class="menu-links">
+          <li><a href="#features" class="scroll-link">FEATURES</a></li>
+          <li><a href="#pricing" class="scroll-link">PRICING</a></li>
+          <li><a href="#faq" class="scroll-link">FAQ</a></li>
+          <li><a href="#contact" class="scroll-link">CONTACT</a></li>
+      </ul>
+  </div>
 
     <main class="main">
       <section class="hero">
@@ -72,7 +83,7 @@
       </div>
     </section>
 
-    <section class="features">
+    <section id="features" class="features">
       <main class="main theme-bg">
         <div class="spacer"></div>
 
@@ -331,11 +342,31 @@
 
     <section class="showcase">
       <div class="showcase__message">GET BILLTRO GET BETTER</div>
-      <img src="assets/phone-left-1.png" alt="" class="showcase-img showcase-one" />
-      <img src="assets/phone-left-2.png" alt="" class="showcase-img showcase-two" />
-      <img src="assets/tablet-center.png" alt="" class="showcase-img showcase-three" />
-      <img src="assets/phone-right-1.png" alt="" class="showcase-img showcase-four" />
-      <img src="assets/phone-right-2.png" alt="" class="showcase-img showcase-five" />
+      <img
+        src="assets/phone-left-1.png"
+        alt=""
+        class="showcase-img showcase-one"
+      />
+      <img
+        src="assets/phone-left-2.png"
+        alt=""
+        class="showcase-img showcase-two"
+      />
+      <img
+        src="assets/tablet-center.png"
+        alt=""
+        class="showcase-img showcase-three"
+      />
+      <img
+        src="assets/phone-right-1.png"
+        alt=""
+        class="showcase-img showcase-four"
+      />
+      <img
+        src="assets/phone-right-2.png"
+        alt=""
+        class="showcase-img showcase-five"
+      />
     </section>
 
     <div class="text-roller">
@@ -348,7 +379,7 @@
     </div>
 
     <main class="main">
-      <section class="pricing">
+      <section id="pricing" class="pricing">
         <div class="pricing__header">Pricing</div>
         <div class="pricing__para">
           Choose a plan that <span class="pricing__para--tag">grows</span> with
@@ -1205,7 +1236,7 @@
     </section>
 
     <main class="main">
-      <section class="faq">
+      <section id="faq" class="faq">
         <div class="faq__header">FAQ<span class="faq__tag">s</span></div>
         <div class="faq-wrapper">
           <div class="faq-content-wrapper">
@@ -1216,79 +1247,23 @@
             </div>
           </div>
 
-          <div class="accordion-wrapper">
-            <div class="accordion">
-              <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false">
-                  <span class="accordion-title">Accordion Title</span
-                  ><span class="icon" aria-hidden="true"></span>
-                </button>
-                <div class="accordion-content">
-                  <p>Your Content Goes Here...</p>
-                </div>
+          <div class="accordion-container">
+            <div class="accordion-item open">
+              <button class="accordion-title">Question 1</button>
+              <div class="accordion-content">
+                <p>This is the answer to question 1.</p>
               </div>
-              <div class="accordion-item">
-                <button id="accordion-button-2" aria-expanded="false">
-                  <span class="accordion-title"> Accordion Title</span
-                  ><span class="icon" aria-hidden="true"></span>
-                </button>
-                <div class="accordion-content">
-                  <p>Your Content Goes Here...</p>
-                </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-title">Question 2</button>
+              <div class="accordion-content">
+                <p>This is the answer to question 2.</p>
               </div>
-              <div class="accordion-item">
-                <button id="accordion-button-3" aria-expanded="false">
-                  <span class="accordion-title">Accordion Title</span
-                  ><span class="icon" aria-hidden="true"></span>
-                </button>
-                <div class="accordion-content">
-                  <p>Your Content Goes Here...</p>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <button id="accordion-button-4" aria-expanded="false">
-                  <span class="accordion-title">Accordion Title</span
-                  ><span class="icon" aria-hidden="true"></span>
-                </button>
-                <div class="accordion-content">
-                  <p>Your Content Goes Here...</p>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <button id="accordion-button-5" aria-expanded="false">
-                  <span class="accordion-title">Accordion Title</span
-                  ><span class="icon" aria-hidden="true"></span>
-                </button>
-                <div class="accordion-content">
-                  <p>Your Content Goes Here...</p>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <button id="accordion-button-5" aria-expanded="false">
-                  <span class="accordion-title">Accordion Title</span
-                  ><span class="icon" aria-hidden="true"></span>
-                </button>
-                <div class="accordion-content">
-                  <p>Your Content Goes Here...</p>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <button id="accordion-button-5" aria-expanded="false">
-                  <span class="accordion-title">Accordion Title</span
-                  ><span class="icon" aria-hidden="true"></span>
-                </button>
-                <div class="accordion-content">
-                  <p>Your Content Goes Here...</p>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <button id="accordion-button-5" aria-expanded="false">
-                  <span class="accordion-title">Accordion Title</span
-                  ><span class="icon" aria-hidden="true"></span>
-                </button>
-                <div class="accordion-content">
-                  <p>Your Content Goes Here...</p>
-                </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-title">Question 3</button>
+              <div class="accordion-content">
+                <p>This is the answer to question 3.</p>
               </div>
             </div>
           </div>
@@ -1306,7 +1281,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer id="contact" class="footer">
       <div class="footer-container">
         <div class="footer__header">
           DO MORE <br />
