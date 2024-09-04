@@ -272,3 +272,37 @@ document.addEventListener('DOMContentLoaded', function() {
       link.addEventListener('click', closeMenu);
   });
 });
+
+
+
+// Pricing Modal
+
+function openModal(modalId) {
+  var modal = document.getElementById(modalId);
+  modal.style.display = "block";
+}
+
+function closeModal(modalId) {
+  var modal = document.getElementById(modalId);
+  modal.style.display = "none";
+}
+function openModal(modalId) {
+  var modal = document.getElementById(modalId);
+  modal.style.display = "block";
+  document.body.style.overflow = "hidden"; // Disable body scrolling
+}
+
+function closeModal(modalId) {
+  var modal = document.getElementById(modalId);
+  modal.style.display = "none";
+  document.body.style.overflow = "auto"; // Enable body scrolling
+}
+
+// Comparison chart accordion
+
+function toggleAccordion() {
+  const accordion = document.getElementById('accordion');
+  const indicator = document.getElementById('indicator');
+  accordion.classList.toggle('open');
+  indicator.textContent = accordion.classList.contains('open') ? '▲' : '▼';
+}
