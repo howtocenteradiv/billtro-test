@@ -202,35 +202,6 @@ th.from(".showcase__message", {
   opacity: 0,
 });
 
-let tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".showcase",
-    start: "0% 40%",
-    end: "50% 80%",
-    scrub: 1,
-  }
-})
-
-
-tl.from(".showcase-three", {
-  bottom: "-200px",
-  opacity: 0,
-});
-
-tl.from(".showcase-two, .showcase-four", {
-  bottom: "-100px",
-  opacity: 0,
-  delay: 1
-})
-
-tl.from(".showcase-one, .showcase-five", {
-  bottom: "-50px",
-  opacity: 0,
-  delay: 1
-})
-
-// Features
-
 // Scroll To Link
 
 document.querySelectorAll('.scroll-link').forEach(anchor => {

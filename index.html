@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BILLTRO - Supercharge Your Business.</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <meta name="description" content="Billtro is a powerful inventory management solution with features like POS, accounting, team collaboration, and more.">
+    <meta name="keywords" content="Billtro, inventory, inventory management, POS, sales, purchase, invoice">
+    <meta property="og:title" content="Billtro - Supercharge Your Business">
+    <meta property="og:description" content="Manage your inventory, POS, accounting, and team effortlessly with Billtro.">
+    <meta property="og:url" content="https://www.billtro.com/">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index">
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
     <link
       rel="stylesheet"
       href="https://unpkg.com/lenis@1.1.11/dist/lenis.css"
@@ -32,13 +34,18 @@
     </header>
 
     <div class="full-screen-menu" id="fullScreenMenu">
-      <span class="close-btn" id="closeBtn">&times;</span>
+      <span class="menu-close-btn" id="closeBtn">X</span>
       <ul class="menu-links">
         <li><a href="#features" class="scroll-link">FEATURES</a></li>
         <li><a href="#pricing" class="scroll-link">PRICING</a></li>
         <li><a href="#faq" class="scroll-link">FAQ</a></li>
         <li><a href="#contact" class="scroll-link">CONTACT</a></li>
       </ul>
+
+      <div class="menu-footer">
+        <img src="assets/logo.png" alt="" class="menu-img">
+        <h1 class="menu-message">Supercharge Your Business.</h1>
+      </div>
     </div>
 
     <main class="main">
@@ -290,24 +297,17 @@
 
               <div class="benefit-wrapper">
                 <div class="benefit-slice">
-                  <img src="assets/speed.svg" alt="" class="benefit-icon" />
+                  <img src="assets/invoice-icon.svg" alt="" class="benefit-icon" />
                   <p class="benefit-para">
-                    Speed up business <br />
-                    functions with team.
+                    Generate standard <br />
+                    and informative invoices.
                   </p>
                 </div>
                 <div class="benefit-slice">
-                  <img src="assets/access.svg" alt="" class="benefit-icon" />
+                  <img src="assets/partial payment.svg" alt="" class="benefit-icon" />
                   <p class="benefit-para">
-                    Manage all user roles <br />
-                    and their accesses.
-                  </p>
-                </div>
-                <div class="benefit-slice">
-                  <img src="assets/scale.svg" alt="" class="benefit-icon" />
-                  <p class="benefit-para">
-                    Scale your team as <br />
-                    your business grows.
+                    Accept partial payments <br />
+                    and track in your ledger.
                   </p>
                 </div>
               </div>
@@ -346,7 +346,7 @@
     </div>
 
     <section class="showcase">
-      <div class="showcase__message">GET BILLTRO GET BETTER</div>
+      <div class="showcase__message">GET <span class="showcase__span">BILLTRO</span> GET <span class="showcase__span">BETTER</span></div>
       <img
         src="assets/phone-left-1.png"
         alt=""
@@ -437,12 +437,12 @@
                     class="pricing__icon"
                   />
                 </div>
-                <h2 class="tier__title">Standard</h2>
+                <h2 class="tier__title">Premium</h2>
               </div>
 
               <p class="tier__para">
                 Catered for growing businesses with advanced inventory tracking,
-                comprehensive accounting tools, and the ability to invite up to
+                ledger based account, and the ability to invite up to
                 8 staff members with customizable role-based access.
               </p>
               <div class="view-features" onclick="openModal('modalStandard')">
@@ -2317,7 +2317,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
     <!-- script -->
