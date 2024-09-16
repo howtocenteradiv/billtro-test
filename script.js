@@ -13,47 +13,6 @@ gsap.ticker.add((time) => {
 
 gsap.ticker.lagSmoothing(0)
 
-var textWrapper = document.querySelector('.line-01');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline()
-  .add({
-    targets: '.line-01 .letter',
-    translateY: [200, 0],
-    translateZ: 0,
-    opacity: [0, 1],
-    easing: "easeOutExpo",
-    duration: 1200,
-    delay: (el, i) => 400 + 50 * i
-  });
-
-var textWrapper = document.querySelector('.line-02');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline()
-  .add({
-    targets: '.line-02 .letter',
-    translateY: [200, 0],
-    translateZ: 0,
-    opacity: [0, 1],
-    easing: "easeOutExpo",
-    duration: 1200,
-    delay: (el, i) => 400 + 50 * i
-  });
-
-var textWrapper = document.querySelector('.line-03');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline()
-  .add({
-    targets: '.line-03 .letter',
-    translateY: [200, 0],
-    translateZ: 0,
-    opacity: [0, 1],
-    easing: "easeOutExpo",
-    duration: 1200,
-    delay: (el, i) => 400 + 50 * i
-  });
 
 TweenMax.to(".box", 2.4, {
   y: "-100%",
@@ -68,12 +27,6 @@ gsap.from('.header', {
   opacity: 0,
   duration: 1.5,
   delay: 0.7
-});
-
-gsap.from('.marketing-wrapper', {
-  opacity: 0,
-  duration: 1,
-  delay: 1
 });
 
 
