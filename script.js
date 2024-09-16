@@ -29,6 +29,30 @@ gsap.from('.header', {
   delay: 0.7
 });
 
+gsap.from('.hero-top-content', {
+  opacity: 0,
+  duration: 1.5,
+  delay: 1.7
+});
+
+gsap.from('.hero-bottom-content', {
+  opacity: 0,
+  duration: 1.5,
+  delay: 1.7
+});
+
+gsap.from('.hero__button', {
+  opacity: 0,
+  duration: 1.5,
+  delay: 1.7
+});
+
+gsap.from('.bg-text', {
+  opacity: 0,
+  duration: 1.5,
+  delay: 2
+});
+
 
 // FAQ Accordion
 
