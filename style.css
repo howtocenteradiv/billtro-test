@@ -340,7 +340,7 @@ body {
 }
 
 .image-wrapper {
-  max-width: 340px;
+  max-width: 290px;
   position: relative;
   top: 50%;
   left: 52%;
@@ -461,6 +461,7 @@ body {
 
   .hero-content-wrapper{
     bottom: 15%;
+    padding-inline: 0px;
   }
 
 }
@@ -630,7 +631,7 @@ body {
   font-weight: 300;
   color: white;
   line-height: 1.4;
-  text-align: center;
+  text-align: start;
 }
 
 .benefit-box {
@@ -643,8 +644,9 @@ body {
 }
 
 .image-half {
-  max-width: 920px;
+  max-width: 720px;
 }
+
 
 .staffing-wrapper {
   display: flex;
@@ -1144,7 +1146,7 @@ body {
   color: black;
   font-weight: 400;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .pricing__para--tag {
@@ -1156,7 +1158,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 30px;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .pricing-grid-item {
@@ -1307,7 +1309,7 @@ body {
   width: 100%;
   border: 2px solid #b90e0a;
   background-color: white;
-  margin-block: 140px;
+  margin-block: 80px;
 }
 
 @media (max-width: 690px){
@@ -1432,10 +1434,11 @@ body {
 
 .legal-header{
   font-size: clamp(24px, 2vw + 12px, 64px);
+  font-weight: 600;
   text-align: center;
   color: white;
-  margin-bottom: 80px;
 }
+
 
 .legal-para{
   max-width: 620px;
